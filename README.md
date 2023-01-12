@@ -1,94 +1,22 @@
-The goal of this coding exam is to quickly get you off the ground with **Conditional Rendering**.
+React chat app
+Create a chat app in ReactJS which sends chat message.
 
+Basic Task
+In this assignment you will need to create a ReactJS chat application.
 
-### Refer to the image below:
+This will be a single page application, which will have a textbox to type the message and a button to send the chat.
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/editable-text-input-output.gif" alt="editable-text-input" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+On clicking send button, show the chat message above the textbox(Refer the image). You need not have to develop the sidebar in the image. Just focus on the chat input box and the chat message thread.
 
+For each message randomly assign a username from the below user list.
 
-### Design Files
-
-<details>
-<summary>Click to view</summary>
-
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Editing output](https://assets.ccbp.in/frontend/content/react-js/editable-text-input-lg-editing-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Saved text output](https://assets.ccbp.in/frontend/content/react-js/editable-text-input-lg-saved-text-output.png)
-
-</details>
-
-### Set Up Instructions
-
-<details>
-<summary>Click to view</summary>
-
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
-
-### Completion Instructions
-
-<details>
-<summary>Functionality to be added</summary>
-<br/>
-
-The app must have the following functionalities
-
-- Initially, the user should see the input element and the`Save` button.
-- When the text is provided in the input element and the `Save` button is clicked
-  - The text should be displayed in the paragraph instead of the input element.
-  - The `Edit` button should be displayed.
-- When the text is saved and the `Edit` button is clicked
-  - The input element should be displayed with the value as text content of the HTML paragraph element.
-  - The `Save` button should be displayed.
-
-</details>
+const user_list = ["Alan", "Bob", "Carol", "Dean", "Elin"]
+For each message, add a like button at the right end of the chat message, which on click should increase the count. Display the count next to the like button.
 
 
 
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- Use `styledComponents` for styling the elements
-
-</details>
-
-### Resources
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #000000; width: 150px; padding: 10px; color: white">Hex: #000000</div>
-<div style="background-color: #323f4b; width: 150px; padding: 10px; color: white">Hex: #323f4b</div>
-<div style="background-color: #f5d0fe; width: 150px; padding: 10px; color: black">Hex: #f5d0fe</div>
-<div style="background-color: #d946ef; width: 150px; padding: 10px; color: black">Hex: #d946ef</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #cbd2d9; width: 150px; padding: 10px; color: black">Hex: #cbd2d9</div>
-
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
+(Optional: Attempt 1 or More) Stretch Goals
+Add emoji options in the chat message
+Add mentions(@) feature. On clikcing '@' show the list of users in the user list.
+Create a websocket(socket.io) server using express.js and establish a client and server communication using socket.io publish and subscribe.
 
