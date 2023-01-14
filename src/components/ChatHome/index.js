@@ -16,10 +16,10 @@ class ChatHome extends Component {
     this.setState({message: event.target.value})
   }
 
-  onEmojiClick = (event, emojiObject) => {
+  onEmojiClick = (event) => {
     const {message} = this.state
-    console.log(emojiObject.emoji)
-    const emojiMessage = message + emojiObject.emoji
+    console.log(event.emoji)
+    const emojiMessage = message + event.emoji
     this.setState({message: emojiMessage})
   }
 
